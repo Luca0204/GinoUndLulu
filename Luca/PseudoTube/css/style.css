@@ -17,6 +17,16 @@ body {
   right: 0;
   width: 30%;
   margin: 0;
+  float: left;
+  transform: translate(0% , -50%);
+}
+.Logo {
+  position: relative;
+  left:1%;
+  top:50%;
+  right: 0;
+  float: left;
+  margin: 0;
   transform: translate(0% , -50%);
 }
 .SearchBTN {
@@ -38,4 +48,18 @@ body {
   padding: 0;
   padding-left:2%;
   padding-right:2%;
+}
+
+.Content {
+  width: calc(100% - 2cm);
+  min-height: 100%;
+  height: auto;
+  padding: 1cm;
+}
+.Video {
+  margin-left: 3%;
+  margin-top:1.5%;
+  margin-bottom:1.5%;
+  width: 200px;
+  float: left;
 }
