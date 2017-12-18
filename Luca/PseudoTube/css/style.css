@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(31, 31, 31);
+  color:white;
+  margin: 0;
+
+}
+
+.TopBar {
+  background-color: rgb(48, 48, 48);
+  height: 1.5cm;
+  width: 100%;
+}
+.Search {
+  position: relative;
+  left:10%;
+  top:50%;
+  right: 0;
+  width: 30%;
+  margin: 0;
+  transform: translate(0% , -50%);
+}
+.SearchBTN {
+  background-color: rgb(89, 89, 89);
+  color: white;
+  height: 0.9cm;
+  width: 20%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-left:2%;
+  padding-right:2%;
+}
+.SearchText {
+  height: 0.9cm;
+  width: 72%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-left:2%;
+  padding-right:2%;
+}
