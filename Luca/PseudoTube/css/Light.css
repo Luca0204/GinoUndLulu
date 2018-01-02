@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(255, 255, 255)
+  color:white;
+  margin: 0;
+}
+.TopBar {
+  background-color: rgb(224, 224, 224)
+  height: 1.5cm;
+  width: 100%;
+}
+.NormalBTN {
+  padding:4px 10px;
+  margin: 0;
+  border: 0;
+  background-color: rgb(181, 181, 181)
+  height: 0.9cm;
+  color: white;
+}
+.SearchBTN {
+  background-color: rgb(181, 181, 181)
+  color: white;
+  height: 0.9cm;
+  width: 20%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-left:2%;
+  padding-right:2%;
+}

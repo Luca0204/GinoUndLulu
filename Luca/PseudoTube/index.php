@@ -6,10 +6,13 @@
         <title>PseudoTube</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/Player.css">
+        <link rel="stylesheet" href="css/Dark.css">
         <style media="screen"></style>
   </head>
   <!-- TOPBAR -->
   <body>
+    <font face="Bahnschrift">
   <div class='TopBar'>
     <a href="../PseudoTube/">
 <img class="Logo" width="40" height="40" src='img/Logo.png' alt='Video Picture'></a>
@@ -19,6 +22,10 @@
        <input placeholder='Suchen...' type='text' name='s' class='SearchText' value=''>
        <button type='submit' class='SearchBTN'>Suchen</button>
      </form>
+  </div>
+  <div class="Login-Upload">
+    <button class="NormalBTN">Hochladen</button>
+    <button class="NormalBTN">Login</button>
   </div>
   </div>
   <?php
@@ -48,12 +55,11 @@ die('Fehler1' . mysqli_error());
 
 while ($Video = mysqli_fetch_array( $db_erg, MYSQL_ASSOC))
 {
-  echo "<a style='color: white; text-decoration: none;' href='../PseudoTube/?video=".$Video['Video_ID']."'><div class='Video'><img src='img/Video.png' alt='Video Picture'><br>".$Video['Video_Titel']."</a></div>";
+  echo "<a class='Video-Showcase' style='color: white; text-decoration: none;' href='../PseudoTube/?video=".$Video['Video_ID']."'><div class='Video'><img src='img/Video.png' alt='Video Picture'><br>".$Video['Video_Titel']."</a></div>";
 }
 echo "
     </div>
 
-  </body>
   ";
   }
 
@@ -74,17 +80,18 @@ echo "
 
     while ($Video = mysqli_fetch_array( $db_erg, MYSQL_ASSOC))
     {
-      echo "<video style='background-color:rgb(10, 10, 10);' width='1280' height='720' controls>
+      echo "<video style='background-color:rgb(10, 10, 10);' controls>
   <source src='Videos/".$Video['FileName']."' type='video/mp4'>
   Ja nö deim broswer nix können das
-</video>
-<br>
+</video><br>
+<label style='position:relative;float:left;margin-top:1.5%;font-size:4em;'>
 ".$Video['Video_Titel']."
 ";
     }
 
-    echo "</div>";
+    echo "</label></div>";
   }
   ?>
-
+</font>
+</body>
 </html>
